@@ -1,0 +1,9 @@
+ubuntu:
+    dockerfile: ./Dockerfile # путь до докер файла указываем относительно директории в build
+    build: .
+    command: npm run server
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html/code
+    ports:
+      - "30000:8080"
