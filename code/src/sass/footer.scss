@@ -1,4 +1,84 @@
 .footer {
-    background: #33e1c3;
-    min-height: 50px;
+    background: lighten($color: $grey-dark, $amount: 10%);
 }
+.footer {
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        padding: 2em 1.25em;
+    }
+    &__column {
+        width: 33.33333%;
+    }
+    &__title {
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 1em;
+    }
+    &__text {
+        line-height: 1.25;
+        font-size: 12px;
+    }
+}
+.posts {
+    padding-right: 1em;
+    &__row {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        border-bottom: 1px solid #fff;
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    }
+    &__photo {
+        margin-left: 1em;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__info {
+        margin-left: 0.5em;
+    }
+    &__title {
+        margin-bottom: 5px;
+    }
+    &__subtitle {
+        font-size: 12px;
+    }
+}
+.tags {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    &__item {
+        padding: 4px;
+        padding-top: 0;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        background: $grey-dark;
+        &--active {
+            background: #000;
+            font-size: 12px;
+            padding-top: 4px;
+        }
+        &:hover {
+            background: #000;
+        }
+    }
+    &__link {
+        color: #fff;
+        font-size: 10px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+

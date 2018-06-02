@@ -1,7 +1,7 @@
 {
-  "name": "lecture_03",
+  "name": "lecture_04",
   "version": "1.0.0",
-  "description": "tasks for lecture_03",
+  "description": "tasks for lecture_04",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lipkin1aleksey/lecture_03.git"
+    "url": "git+ssh://git@github.com/lipkin1aleksey/lecture_04.git"
   },
   "keywords": [
     "npm",
@@ -23,20 +23,22 @@
   "author": "aleksey1lipkin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lipkin1aleksey/lecture_03/issues"
+    "url": "https://github.com/lipkin1aleksey/epam-markup/issues"
   },
-  "homepage": "https://github.com/lipkin1aleksey/lecture_03#readme",
+  "homepage": "https://github.com/lipkin1aleksey/epam-markup#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "4.5.1",
     "css-loader": "0.28.11",
     "extract-text-webpack-plugin": "4.0.0-beta.0",
     "html-webpack-plugin": "3.2.0",
+    "imagemin-webpack-plugin": "^2.1.5",
     "node-sass": "4.9.0",
     "node-static": "0.7.10",
     "sass-loader": "7.0.1",
     "style-loader": "0.21.0",
     "webpack": "4.10.1",
     "webpack-cli": "2.1.4",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "3.1.4"
   },
   "dependencies": {
     "jquery": "3.3.1",

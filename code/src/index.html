@@ -10,67 +10,88 @@
 </head>
 <body>
     <div class="wrapper">
-        <aside class="menu">
-            <div class="menu__wrapper">
-                <h1 class="menu__title">Some Name</h1>
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Portfolio</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">About me</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>        
-        </aside>
+        <div class="container">
+            <aside class="menu">
+                <div class="menu__wrapper">
+                    <h1 class="menu__title title title--grey">Some Name</h1>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item"><a href="#gallery" class="main-nav__link">Portfolio</a></li>
+                            <li class="main-nav__item"><a href="#about" class="main-nav__link">About me</a></li>
+                            <li class="main-nav__item"><a href="#contact" class="main-nav__link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>        
+            </aside>
+        <div class="content-wrapper">
         <div class="content">
-            <div class="container">
-               <div class="main-gallery">
+               <div class="main-gallery" id="gallery">
                    <ul class="main-gallery__list">
                        <li class="main-gallery__item">
-                           <div class="main-gallery__photo"><img src="" alt="" class="main-gallery__photo-img"></div>
+                           <div class="main-gallery__photo">
+                               <img src="src/img/pic-1.jpg" alt="Изображение из галереии" class="main-gallery__photo-img">
+                            </div>
                        </li>
                        <li class="main-gallery__item">
-                           <div class="main-gallery__photo"><img src="" alt="" class="main-gallery__photo-img"></div>
+                           <div class="main-gallery__photo">
+                               <img src="src/img/pic-2.jpg" alt="Изображение из галереии" class="main-gallery__photo-img">
+                            </div>
                        </li>
                        <li class="main-gallery__item">
-                           <div class="main-gallery__photo"><img src="" alt="" class="main-gallery__photo-img"></div>
+                           <div class="main-gallery__photo">
+                               <img src="src/img/pic-3.jpg" alt="Изображение из галереии" class="main-gallery__photo-img">
+                            </div>
                        </li>
                        <li class="main-gallery__item">
-                           <div class="main-gallery__photo"><img src="" alt="" class="main-gallery__photo-img"></div>
+                           <div class="main-gallery__photo">
+                               <img src="src/img/pic-1.jpg" alt="Изображение из галереии" class="main-gallery__photo-img">
+                            </div>
                        </li>
                        <li class="main-gallery__item">
-                           <div class="main-gallery__photo"><img src="" alt="" class="main-gallery__photo-img"></div>
+                           <div class="main-gallery__photo">
+                               <img src="src/img/pic-2.jpg" alt="Изображение из галереии" class="main-gallery__photo-img">
+                            </div>
                        </li>
                        <li class="main-gallery__item">
-                           <div class="main-gallery__photo"><img src="" alt="" class="main-gallery__photo-img"></div>
+                           <div class="main-gallery__photo">
+                               <img src="src/img/pic-3.jpg" alt="Изображение из галереии" class="main-gallery__photo-img">
+                            </div>
                        </li>
                        <li class="main-gallery__item">
-                           <div class="main-gallery__photo"><img src="" alt="" class="main-gallery__photo-img"></div>
+                           <div class="main-gallery__photo">
+                               <img src="src/img/pic-1.jpg" alt="Изображение из галереии" class="main-gallery__photo-img">
+                            </div>
                        </li>
                        <li class="main-gallery__item">
-                           <div class="main-gallery__photo"><img src="" alt="" class="main-gallery__photo-img"></div>
+                           <div class="main-gallery__photo">
+                               <img src="src/img/pic-2.jpg" alt="Изображение из галереии" class="main-gallery__photo-img">
+                            </div>
                        </li>
                        <li class="main-gallery__item">
-                           <div class="main-gallery__photo"><img src="" alt="" class="main-gallery__photo-img"></div>
+                           <div class="main-gallery__photo">
+                               <img src="src/img/pic-3.jpg" alt="Изображение из галереии" class="main-gallery__photo-img">
+                            </div>
                        </li>
                    </ul>
                    <div class="pagination">
                        <div class="pagination__wrapper">
-                            <a href="" class="pagination__arrow pagination__arrow--left"></a>
-                            <a href="" class="pagination__page-number">1</a>
-                            <a href="" class="pagination__page-number">2</a>
-                            <a href="" class="pagination__page-number">3</a>
-                            <a href="" class="pagination__page-number">4</a>
-                            <a href="" class="pagination__arrow pagination__arrow--right"></a>
+                            <a href="#" class="pagination__arrow pagination__arrow--left">«</a>
+                            <a href="#" class="pagination__page-number pagination__page-number--active">1</a>
+                            <a href="#" class="pagination__page-number">2</a>
+                            <a href="#" class="pagination__page-number">3</a>
+                            <a href="#" class="pagination__page-number">4</a>
+                            <a href="#" class="pagination__arrow pagination__arrow--right">»</a>
                         </div>
                     </div>
                </div>
                <main class="main-content">
-                   <div class="container">
-                      <h2 class="main-content__title">About Me</h2>
+                   <div class="main-content__wrapper">
+                      <h2 class="main-content__title title title--white" id="about">About Me</h2>
                       <div class="main-content__box">
                         <div class="profile">
-                            <div class="profile__avatar"><img src="" alt="" class="profile__avatar-img"></div>
+                            <div class="profile__avatar">
+                                <img src="src/img/pic-5.jpg" alt="Аватар" class="profile__avatar-img" />
+                            </div>
                                 <h3 class="profile__name">My Name</h3>
                             <p class="profile__info">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -78,29 +99,34 @@
                                 doloribus itaque ullam, autem ab. Aut nemo quod natus sunt, sequi 
                                 ducimus quos pariatur aliquid quo, impedit cumque, dolore aperiam. 
                                 Temporibus animi possimus quod illo magnam necessitatibus quas totam, 
+                                rerum, cupiditate debitis eaque. Aut nemo quod natus sunt, sequi 
+                                ducimus quos pariatur aliquid quo, impedit cumque, dolore aperiam. 
+                                Temporibus animi possimus quod illo magnam necessitatibus quas totam, 
                                 rerum, cupiditate debitis eaque.
                             </p>
-                            <a href="mailto:example@example.com" class="profile__link">example@example.com</a>
-                            <a href="tel:88005553535" class="profile__link">88005553535</a>
+                            <div class="profile__links-wrap">
+                                <a href="mailto:example@example.com" class="profile__link">example@example.com</a>
+                                <a href="tel:88005553535" class="profile__link">88005553535</a>
+                            </div>
                         </div>
                         </div>
                         <div class="main-content__box">
                         <div class="tech-skills">
                             <p class="tech-skills__title">Technical Skills</p>
                             <div class="tech-skills__row">
-                                <p class="tech-skills__title">Photography</p>
-                                <div class="tech-skills__loader"></div>
+                                <p class="tech-skills__subtitle">Photography</p>
+                                <div class="tech-skills__loader tech-skills__loader--wide"></div>
                             </div>
                             <div class="tech-skills__row">
-                                <p class="tech-skills__title">Web Design</p>
-                                <div class="tech-skills__loader"></div>
+                                <p class="tech-skills__subtitle">Web Design</p>
+                                <div class="tech-skills__loader tech-skills__loader--normal"></div>
                             </div>
                             <div class="tech-skills__row">
-                                <p class="tech-skills__title">Photoshop</p>
-                                <div class="tech-skills__loader"></div>
+                                <p class="tech-skills__subtitle">Photoshop</p>
+                                <div class="tech-skills__loader tech-skills__loader--narrow"></div>
                             </div>
                             <div class="tech-skills__button-wrap">
-                                <a href="#" class="tech-skills__button button"></a>
+                                <a href="#" class="tech-skills__button button button--white">Download Resume</a>
                             </div>
                         </div>
                         </div>
@@ -127,7 +153,7 @@
                                             </li>
                                             <li class="rate__item">
                                                 <span class="rate__price">10</span>
-                                                <p class="rate__text rate__text--small"></p>
+                                                <p class="rate__text rate__text--small">per month</p>
                                             </li>
                                         </ul>
                                         <div class="rate__footer">
@@ -153,7 +179,7 @@
                                                 </li>
                                                 <li class="rate__item">
                                                     <span class="rate__price">10</span>
-                                                    <p class="rate__text rate__text--small"></p>
+                                                    <p class="rate__text rate__text--small">per month</p>
                                                 </li>
                                             </ul>
                                             <div class="rate__footer">
@@ -163,59 +189,74 @@
                                     </div>
                             </section>
                         </div>
-                   </div>
+                    </div>
                </main>
                <section class="main-form">
-                   <h4 class="main-form__title title">Contact Me</h4>
+                   <div class="main-form__wrapper">
+                   <h4 class="main-form__title title" id="contact">Contact Me</h4>
                    <p class="main-form__text">
                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                       Esse consectetur repellendus officiis ad, unde eveniet delectus 
-                       excepturi optio laboriosam hic! Aspernatur sapiente libero, autem 
-                       ut natus impedit architecto veniam dignissimos optio dicta fugit, 
-                       enim dolore culpa perspiciatis similique. Veritatis, amet?
+                       Esse consectetur repellendus officiis ad.
                     </p>
-                    <form action="#" class="request-form">
+                    <form class="request-form" onsubmit="return false;">
                         <div class="request-form__field">
                             <label for="name" class="request-form__text">Name</label>
-                            <input type="text" class="request-form__input" id="name" name="name" />
+                            <input 
+                                type="text" 
+                                class="request-form__input" 
+                                id="name" 
+                                name="name"
+                                placeholder="Your name" 
+                                />
                         </div>
                         <div class="request-form__field">
                             <label for="email" class="request-form__text">Email</label>
-                            <input type="text" class="request-form__input" id="email" name="email" />
+                            <input 
+                                type="text" 
+                                class="request-form__input" 
+                                id="email" 
+                                name="email"
+                                placeholder="Your email" 
+                                />
                         </div>
                         <div class="request-form__field">
                             <label for="message" class="request-form__text">Message</label>
-                            <input type="text" class="request-form__input" id="message" name="message" />
+                            <input 
+                                type="text" 
+                                class="request-form__input" 
+                                id="message"
+                                name="message"
+                                placeholder="Your message" 
+                                />
                         </div>
                         <div class="request-form__field">
-                            <input type="submit" class="request-form__button" value="Send Message" />
+                            <input type="submit" class="request-form__button button button--black" value="Send Message" />
                         </div>
                     </form>
+                </div>
                </section> 
             </div>
-        </div>
         <footer class="footer">
-            <div class="container">
+            <div class="footer__wrapper">
                 <div class="footer__column">
                     <p class="footer__title title">Info</p>
                     <p class="footer__text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Amet dolor sint similique placeat exercitationem omnis 
-                        repudiandae ipsam impedit animi esse?
+                        Amet dolor sint similique, sint similique.
                     </p>
                 </div>
                 <div class="footer__column">
-                    <p class="footer__title title">Info</p>
+                    <p class="footer__title title">Blog posts</p>
                     <div class="posts">
                         <div class="posts__row">
-                            <div class="posts__photo"><img src="" alt="" class="posts__photo-img" /></div>
+                            <div class="posts__photo"><img src="src/img/pic-4.png" alt="Blog post image" class="posts__photo-img" /></div>
                             <div class="posts__info">
                                 <p class="posts__title">Lorem</p>
                                 <p class="posts__subtitle">Sed muttis nunc</p>
                             </div>
                         </div>
                         <div class="posts__row">
-                            <div class="posts__photo"><img src="" alt="" class="posts__photo-img" /></div>
+                            <div class="posts__photo"><img src="src/img/pic-4.png" alt="Blog post image" class="posts__photo-img" /></div>
                             <div class="posts__info">
                                 <p class="posts__title">Ipsum</p>
                                 <p class="posts__subtitle">Sed muttis nunc</p>
@@ -226,7 +267,7 @@
                 <div class="footer__column">
                     <p class="footer__title title">Popular tags</p>
                     <ul class="tags">
-                        <li class="tags__item"><a href="#" class="tags__link">Travel</a></li>
+                        <li class="tags__item tags__item--active"><a href="#" class="tags__link">Travel</a></li>
                         <li class="tags__item"><a href="#" class="tags__link">New york</a></li>
                         <li class="tags__item"><a href="#" class="tags__link">London</a></li>
                         <li class="tags__item"><a href="#" class="tags__link">IKEA</a></li>
@@ -243,7 +284,9 @@
                     </ul>
                 </div>
             </div>
-        </footer> 
+            </footer>
+        </div>
+        </div>
     </div>
     <script src="bundle.js"></script>
 </body>

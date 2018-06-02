@@ -1,0 +1,40 @@
+.main-form {
+    padding-top: 2em;
+    &__wrapper {
+        width: 46%;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-bottom: 1em;
+    }
+    &__text {
+        line-height: 1.3;
+        margin-bottom: 1em;
+    }
+}
+.request-form {
+    &__field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        &:last-child {
+            margin-bottom: 3em;
+        }
+    }
+    &__text {
+        font-size: 12px;
+        margin-bottom: 0.5em;
+    }
+    &__input {
+        padding: 0.25em;
+        border: 1px solid $grey;
+        &:focus {
+            border-color: #33e1c3;
+        }
+    }
+    &__button {
+        background: #000;
+        color: $grey;
+        border: none;
+    }
+}
