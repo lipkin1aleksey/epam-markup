@@ -2,6 +2,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 module.exports = {
@@ -20,9 +21,19 @@ module.exports = {
           { 
             loader: 'css-loader', 
             options: { minimize: true } 
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+                plugins: [
+                    autoprefixer({
+                        browsers:['ie >= 8', 'last 4 version']
+                    })
+                ],
+          }
           }, 
-          'sass-loader']
-        })
+            'sass-loader']
+          })
       }
     ]
   },

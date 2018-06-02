@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/lipkin1aleksey/epam-markup#readme",
   "devDependencies": {
+    "autoprefixer": "^8.6.0",
     "copy-webpack-plugin": "4.5.1",
     "css-loader": "0.28.11",
     "extract-text-webpack-plugin": "4.0.0-beta.0",
@@ -34,6 +35,7 @@
     "imagemin-webpack-plugin": "2.1.5",
     "node-sass": "4.9.0",
     "node-static": "0.7.10",
+    "postcss-loader": "^2.1.5",
     "sass-loader": "7.0.1",
     "style-loader": "0.21.0",
     "webpack": "4.10.1",

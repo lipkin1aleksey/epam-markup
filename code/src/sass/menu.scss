@@ -13,11 +13,13 @@
         text-transform: uppercase;
         margin-bottom: 51px;
         font-size: 15px;
+        max-width: 195px;
     }
 }
 .main-nav {
     position: fixed;
     top: 120px;
+    align-self: center;
     &__list {
     }
     &__item {
@@ -27,5 +29,10 @@
     &__link {
         font-size: 12px;
         color: $grey-dark;
+    }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .main-nav {
+        left: 232px;
     }
 }

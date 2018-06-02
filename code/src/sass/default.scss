@@ -15,6 +15,13 @@ html, body {
     box-sizing: border-box;
     outline: none;
 }
+//turn off outline
+:focus {
+    outline:none;
+}
+::-moz-focus-inner {
+    border:0;
+}
 a {
     text-decoration: none;
     color: #000;
@@ -39,6 +46,7 @@ a {
 }
 .content-wrapper {
     background: $grey-light;
+    width: 100%;
 }
 .title {
     line-height: 1.5;
