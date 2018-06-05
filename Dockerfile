@@ -10,3 +10,12 @@ RUN apt-get install nodejs -y
 # какой-то пакет, без которого крашится npm install
 RUN apt install libpng-dev -y
 RUN npm update
+
+WORKDIR /var/www/html/code
+COPY ./code/package.json ./
+# установим все npm пакеты
+RUN npm install
+
+#скопируем наш код
+COPY ./code ./
+CMD [ "npm", "run", "server" ]
