@@ -1,0 +1,16 @@
+.pricelist {
+    &__title {
+        margin-bottom: 1.5em;
+    }
+    &__types {
+        display: flex;
+    }
+    &__rate {
+        width: 50%;
+        margin-right: 10px;
+        margin-bottom: 2em;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

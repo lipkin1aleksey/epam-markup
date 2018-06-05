@@ -1,9 +1,16 @@
-@import "./sass/reset.scss";
-@import "./sass/default.scss";
-@import "./sass/menu.scss";
-@import "./sass/main-gallery.scss";
-@import "./sass/main-content.scss";
-@import "./sass/main-form.scss";
+//misc
+@import "./sass/misc/reset.scss";
+@import "./sass/misc/default.scss";
 
-@import "./sass/footer.scss";
-@import "./sass/header.scss";
+//components
+@import "./sass/menu/menu.scss";
+@import "./sass/main-gallery/main-gallery.scss";
+@import "./sass/main-content/main-content.scss";
+@import "./sass/profile/profile.scss";
+@import "./sass/pricelist/pricelist.scss";
+@import "./sass/rate/rate.scss";
+@import "./sass/tech-skills/tech-skills.scss";
+@import "./sass/main-form/main-form.scss";
+@import "./sass/footer/footer.scss";
+@import "./sass/posts/posts.scss";
+@import "./sass/tags/tags.scss";

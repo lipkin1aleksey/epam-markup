@@ -1,0 +1,27 @@
+.tags {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    &__item {
+        padding: 4px;
+        padding-top: 0;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        background: $grey-dark;
+        &--active {
+            background: #000;
+            font-size: 12px;
+            padding-top: 4px;
+        }
+        &:hover {
+            background: #000;
+        }
+    }
+    &__link {
+        color: #fff;
+        font-size: 10px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
