@@ -15,11 +15,13 @@
         font-size: 15px;
         max-width: 195px;
     }
+    &__main-nav {
+        position: fixed;
+        top: 120px;
+        align-self: center;
+    }
 }
 .main-nav {
-    position: fixed;
-    top: 120px;
-    align-self: center;
     &__list {
     }
     &__item {
